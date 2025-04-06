@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.D2W2ZM189YWY0NAkDpEtRAHaHa?rs=1&pid=ImgDetMain">
+    <title>مدرسة مطاي الرسمية للغات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            background: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background: #005599;
+        }
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-pair {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 10px 0;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-container img.expanded {
+            transform: scale(2);
+        }
+        .image-caption {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+        .comment-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .comment-section input, .comment-section textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .comment-section button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .comment-section button:hover {
+            background: #005599;
+        }
+        .comment {
+            background: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 50%;
+        }
+        .question {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .answer {
+            display: none;
+            font-size: 30px;
+            color: green;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #620062;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #800080;
+        }
+
+        .options {
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        input[type="text"] {
+            font-size: 22px;
+            padding: 8px;
+            width: 50%;
+            margin-top: 10px;
+            text-align: center;
+            border: 2px solid #620062;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <span style="font-size: 24px;" class="header-text">مديرية التربية والتعليم بالمنيا</span>
+        <br>
+        <span style="font-size: 24px;" class="header-text">توجية عام الاعلام التربوى</span>
+    </div>
+<div class="title-container">
+    <h1>زهور اللغات</h1>
+<br><br>
+    <h2>صحيفة دورية الصدور – تصدر كل شهر عن جماعة الصحافة بالمدرسة – العدد الثالث عن شهر مارس 2025</h2>
+</div>
+
+    <div class="header-right">
+        <span style="font-size: 24px;" class="header-text">ادارة مطاى التعليمية</span>
+        <br>
+        <span style="font-size: 24px;" class="header-text">مدرسة مطاى الرسمية للغات</span>
+    </div>
+</header>
+<main>
+    <div class="buttons-container">
+        <button class="btn" onclick="location.href='index.html'">الرئيسية</button>
+        <button class="btn" onclick="location.href='الافتتاحية.html'">الافتتاحية</button>
+        <button class="btn" onclick="location.href='الاخبار.html'">الاخبار</button>
+        <button class="btn" onclick="location.href='مقالات.html'">مقالات</button>
+        <button class="btn" onclick="location.href='تحقيقات.html'">تحقيقات</button>
+        <button class="btn" onclick="location.href='حوارات صحفية.html'">حوارات صحفية</button>
+        <button class="btn" onclick="location.href='كاركاتير.html'">كاركاتير</button>
+        <button class="btn" onclick="location.href='تقارير.html'">تقارير</button>
+        <button class="btn" onclick="location.href='صور صحفية.html'">صور صحفية</button>
+        <button class="btn" onclick="location.href='مناهجنا.html'">مناهجنا</button>
+        <button class="btn" onclick="location.href='الاستراحة.html'">الاستراحة</button>
+        <button class="btn" onclick="location.href='الإعلان.html'">إعلانات</button>
+        <button class="btn" onclick="location.href='أسرة التحرير.html'">أسرة التحرير</button>
+        <img src="24.jpg" style="width: 750px; height: auto; cursor: pointer;" onclick="toggleSize(this)">
+    </div>
+<div class="container">
+    <div class="question">ما هو الحيوان المائي الذي له 3 قلوب؟</div>
+    <div class="options">هل تعرف الإجابة؟</div>
+    <button onclick="showInput('input1', 'answer1', 'الأخطبوط')">نعم</button>
+    <button onclick="showAnswer('answer1', 'الأخطبوط')">لا</button>
+    <input type="text" id="input1" class="user-input" placeholder="اكتب إجابتك هنا" style="display: none;" onkeypress="checkEnter(event, 'input1', 'answer1', 'الأخطبوط')">
+    <div id="answer1" class="answer"></div>
+    
+    <div class="question">ماهو الشيء الذي يكون أخضر في الأرض ويكون أسود في السوق ويكون أحمـر في البيت؟</div>
+    <div class="options">هل تعرف الإجابة؟</div>
+    <button onclick="showInput('input2', 'answer2', 'الشاي')">نعم</button>
+    <button onclick="showAnswer('answer2', 'الشاي')">لا</button>
+    <input type="text" id="input2" class="user-input" placeholder="اكتب إجابتك هنا" style="display: none;" onkeypress="checkEnter(event, 'input2', 'answer2', 'الشاي')">
+    <div id="answer2" class="answer"></div>
+
+    <div class="question">ماهو الشيء الذي له أربع أرجل ولا يستطيع المشي؟</div>
+    <div class="options">هل تعرف الإجابة؟</div>
+    <button onclick="showInput('input3', 'answer3', 'الكرسي')">نعم</button>
+    <button onclick="showAnswer('answer3', 'الكرسي')">لا</button>
+    <input type="text" id="input3" class="user-input" placeholder="اكتب إجابتك هنا" style="display: none;" onkeypress="checkEnter(event, 'input3', 'answer3', 'الكرسي')">
+    <div id="answer3" class="answer"></div>
+    
+    <div class="question">حامل و محمول نصف ناشف و نصف مبلول فمن أكون؟</div>
+    <div class="options">هل تعرف الإجابة؟</div>
+    <button onclick="showInput('input4', 'answer4', 'السفينة')">نعم</button>
+    <button onclick="showAnswer('answer4', 'السفينة')">لا</button>
+    <input type="text" id="input4" class="user-input" placeholder="اكتب إجابتك هنا" style="display: none;" onkeypress="checkEnter(event, 'input4', 'answer4', 'السفينة')">
+    <div id="answer4" class="answer"></div>
+
+    <div class="question">ما هو الشيء الذى ليس له بداية ولا نهاية؟</div>
+    <div class="options">هل تعرف الإجابة؟</div>
+    <button onclick="showInput('input5', 'answer5', 'الدائرة')">نعم</button>
+    <button onclick="showAnswer('answer5', 'الدائرة')">لا</button>
+    <input type="text" id="input5" class="user-input" placeholder="اكتب إجابتك هنا" style="display: none;" onkeypress="checkEnter(event, 'input5', 'answer5', 'الدائرة')">
+    <div id="answer5" class="answer"></div>
+</div>
+      <div class="number-buttons">
+        <button class="btn" onclick="location.href='الاستراحة 3.html'">3</button>
+        <button class="btn" onclick="location.href='الاستراحة 2.html'">2</button>
+        <button class="btn" onclick="location.href='الاستراحة.html'">1</button>
+<script>
+    function normalizeText(text) {
+        return text.trim().replace(/أ|إ|آ/g, "ا"); // إزالة الهمزات لمقارنة صحيحة
+    }
+
+    function showInput(inputId, answerId, correctAnswer) {
+        document.getElementById(inputId).style.display = "block";
+        document.getElementById(answerId).style.display = "none";
+    }
+
+    function showAnswer(answerId, correctAnswer) {
+        document.getElementById(answerId).innerHTML = `<span class='wrong'>الإجابة: ${correctAnswer}</span>`;
+        document.getElementById(answerId).style.display = "block";
+    }
+
+    function checkEnter(event, inputId, answerId, correctAnswer) {
+        if (event.key === "Enter") {
+            let userAnswer = normalizeText(document.getElementById(inputId).value);
+            let correctNormalized = normalizeText(correctAnswer);
+            
+            if (userAnswer === correctNormalized) {
+                document.getElementById(answerId).innerHTML = `<span class='correct'>إجابتك صحيحة! 🎉</span>`;
+            } else {
+                document.getElementById(answerId).innerHTML = `<span class='wrong'>إجابتك خاطئة، الإجابة الصحيحة: ${correctAnswer}</span>`;
+            }
+            
+            document.getElementById(answerId).style.display = "block";
+            document.getElementById(inputId).style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
